@@ -4,7 +4,7 @@ from tkinter import Tk, PhotoImage, Canvas
 
 loopPoint = 0
 
-folder_path = 'FramesOriginal'
+folder_path = 'imageFolder'
 image_paths = []
 
 for filename in os.listdir(folder_path):
@@ -16,8 +16,8 @@ def move_file(key):
     global loopPoint
     if loopPoint < len(image_paths):
         source_path = image_paths[loopPoint]
-        folder_path_1 = "Horizontal"
-        folder_path_2 = "Vertical"
+        folder_path_1 = "folder_1"
+        folder_path_2 = "folder_2"
         if key == "1":
             destination = folder_path_1
         elif key == "2":
